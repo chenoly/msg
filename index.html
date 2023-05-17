@@ -12,6 +12,12 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
   </head>
+  <script>
+    function qrcode_embedding(){
+      var paragraph = document.getElementById("text_res");
+      paragraph.textContent = "Sorry, it's developing.";
+    }
+  </script>
 <body>
  <!--  Main banner section -->
  <section class="w3l-main-banner" id="home">
@@ -48,6 +54,7 @@
             <p>Nowadays, copy detection pattern (CDP) is gaining market recognition as an anti-counterfeiting solution with its low cost and efficient anti-counterfeiting effect. In fact, CDP itself does not carry any information, but is only a high-density random pattern; therefore, the way CDP achieves anti-counterfeiting is usually attached to the carrier as an accessory (\emph{e.g.,} QR code). For this reason, this paper proposed a new anti-counterfeiting scheme, a mixed-bit sampling graph (MSG). The main difference between MSG and CDP is that, functionally, MSG can carry the watermark and provide an additional communication channel. More importantly, visually, there is not much difference from CDP, and both utilize the maximum entropy principle. Specifically, MSG is composed of multiple mixed sampling blocks (MSBs), each containing one watermark bit, obtained by sampling the pixels of two orthogonal templates. We model the sampling process as a constrained optimization problem, where the objective function is to control the proportion of black and white pixels in the MSB, and the constraint is to ensure the successful embedding of the watermarked bit. We sample the templates by treating their sampling process as a Markov chain, which is sampled using the Metropolis-Hasting sampling. The MSB is then obtained by controlling the conditions that the difference of the sampling strength of two orthogonal templates need to be satisfied, and finally, multiple MSBs are combined to obtain the MSG. Experiments show that MSG can indeed be used as an anti-counterfeiting solution.</p>
             AC code Text:<input></input>
             Generate: <button onclick="qrcode_embedding()" class="button" style="cursor:pointer"></button>
+            <h4 id="text_res"></h4>
 	</div>
 </section>
 <script src="assets/js/embedding.js"></script>

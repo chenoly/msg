@@ -10443,7 +10443,7 @@ h4.sub-title {
   -ms-transition: 0.3s ease-in; }
 
 /* .w3l-main-banner .banner-view {
-  background: url(../images/1.jpg) no-repeat right;
+  background: url(../images/ikun.jpg) no-repeat right;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -10453,7 +10453,7 @@ h4.sub-title {
 
 .w3l-main-banner .banner-view:before {
   content: "";
-  background: rgba(0, 0, 0, 0.57);
+  background: rgba(255, 255, 255, 0.57);
   position: absolute;
   top: 0;
   min-height: 100%;
